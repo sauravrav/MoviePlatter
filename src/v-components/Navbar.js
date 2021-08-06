@@ -36,7 +36,7 @@ const Nav = styled.div`
   align-items: center;
   z-index: 2;
   .logo {
-    font-size: 32px;
+    font-size: 20px;
     font-family: "Abril Fatface", cursive;
   }
   ul {
@@ -61,7 +61,7 @@ const Nav = styled.div`
   @media screen and (max-width: 712px) {
     ul {
       li {
-        padding-left: 60px;
+        padding-left: 40px;
         .lii {
           font-size: 10px;
         }
