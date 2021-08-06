@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { movieDetailUrl } from "../api";
 import axios from "axios";
 import { useState } from "react";
@@ -36,7 +36,7 @@ const MovieDetail = ({ pathId }) => {
   };
   useEffect(() => {
     loadMovieDetailHandler();
-  }, [pathId]);
+  }, [loadMovieDetailHandler]);
   console.log(det);
   return (
     <CardShadow className="shade" onClick={exitDetail}>

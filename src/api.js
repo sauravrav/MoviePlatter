@@ -18,9 +18,9 @@ const getCurrentDay = () => {
   }
 };
 const currentYear = new Date().getFullYear();
-const thisYear = `${currentYear}-${getCurrentMonth()}-${getCurrentMonth()}`;
-const nextYear = `${currentYear + 1}-${getCurrentMonth()}-${getCurrentMonth()}`;
-const lastYear = `${currentYear - 1}-${getCurrentMonth()}-${getCurrentMonth()}`;
+const thisYear = `${currentYear}-${getCurrentMonth()}-${getCurrentDay()}`;
+const nextYear = `${currentYear + 1}-${getCurrentMonth()}-${getCurrentDay()}`;
+const lastYear = `${currentYear - 1}-${getCurrentMonth()}-${getCurrentDay()}`;
 //respective urls
 export const upcomingMovieUrl = `${base_url}&primary_release_date.gte=${lastYear}&primary_release_date.lte=${thisYear}`;
 export const newMovieUrl = `${base_url}&primary_release_date.gte=${thisYear}&primary_release_date.lte=${nextYear}`;

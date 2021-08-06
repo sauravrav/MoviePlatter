@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { loadMovieDetail } from "../actions/detailAction";
-import MovieDetail from "./movieDetail";
-import { useDispatch } from "react-redux";
+// import { loadMovieDetail } from "../actions/detailAction";
+// import MovieDetail from "./movieDetail";
+// import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { movieDetailUrl } from "../api";
-import { useState } from "react";
+// import axios from "axios";
+// import { movieDetailUrl } from "../api";
+// import { useState } from "react";
 import { useLocation } from "react-router";
 const Movie = ({ title, image, id }) => {
   const location = useLocation();
