@@ -6,13 +6,19 @@ const Navbar = () => {
       <div className="logo">Movie Platter</div>
       <ul>
         <li>
-          <Link to="/">About Us</Link>
+          <Link className="lii" to="/">
+            About Us
+          </Link>
         </li>
         <li>
-          <Link to="/popmovie">Popular Movies</Link>
+          <Link className="lii" to="/popmovie">
+            Popular Movies
+          </Link>
         </li>
         <li>
-          <Link to="/upmovie">UpcomingMovies</Link>
+          <Link className="lii" to="/upmovie">
+            Upcoming Movies
+          </Link>
         </li>
       </ul>
     </Nav>
@@ -30,7 +36,7 @@ const Nav = styled.div`
   align-items: center;
   z-index: 2;
   .logo {
-    font-size: 40px;
+    font-size: 32px;
     font-family: "Abril Fatface", cursive;
   }
   ul {
@@ -48,6 +54,16 @@ const Nav = styled.div`
         &:hover {
           font-size: 25px;
           color: blanchedalmond;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 712px) {
+    ul {
+      li {
+        padding-left: 60px;
+        .lii {
+          font-size: 10px;
         }
       }
     }

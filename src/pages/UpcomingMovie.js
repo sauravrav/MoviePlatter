@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { loadMovieDetail } from "../actions/detailAction";
+import { pageAnimation } from "../v-components/animation";
 const Upcoming = () => {
   const location = useLocation();
   const pathId = location.pathname.split("/")[2];
@@ -21,7 +22,12 @@ const Upcoming = () => {
   return (
     <div style={{ backgroundColor: "white" }}>
       <h2>Upcoming Movies</h2>
-      <MovieList>
+      <MovieList
+        variants={pageAnimation}
+        animate="show"
+        initial="hidden"
+        exit="exit"
+      >
         {movies.newMovie.map((data) => (
           <Movie
             title={data.title}

@@ -50,6 +50,9 @@ const AboutUs2 = () => {
   );
 };
 const About2 = styled.div`
+  @media screen and (max-width: 1190px) {
+    display: none;
+  }
   color: white;
   display: flex;
   justify-content: space-between;

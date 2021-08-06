@@ -45,5 +45,14 @@ const About1 = styled.div`
   display: flex;
   justify-content: space-space-evenly;
   color: white;
+  @media screen and (max-width: 1190px) {
+    display: inline-block;
+    img {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: -4;
+    }
+  }
 `;
 export default AboutUs1;

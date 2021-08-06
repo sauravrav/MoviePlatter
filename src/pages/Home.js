@@ -6,6 +6,7 @@ import MovieDetail from "../components/movieDetail";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimation } from "../v-components/animation";
 // import { loadMovieDetail } from "../actions/detailAction";
 const Home = () => {
   const location = useLocation();
@@ -21,7 +22,12 @@ const Home = () => {
   return (
     <div style={{ backgroundColor: "white" }}>
       <h2>Popular Movies</h2>
-      <MovieList>
+      <MovieList
+        variants={pageAnimation}
+        animate="show"
+        initial="hidden"
+        exit="exit"
+      >
         {movies.popularMovies.map((data) => (
           <Movie
             title={data.title}
