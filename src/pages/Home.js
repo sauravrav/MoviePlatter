@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadMovies } from "../actions/movieAction";
 import Movie from "../components/movie";
 import MovieDetail from "../components/movieDetail";
-// import styled from "styled-components";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 // import { loadMovieDetail } from "../actions/detailAction";
