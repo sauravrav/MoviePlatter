@@ -7,6 +7,19 @@ const StyleGlobal = createGlobalStyle`
 }
 body{
     background-color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    &::-webkit-scrollbar{
+        width:0.5rem;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: hotpink;
+    }
+    &::-webkit-scrollbar-track{
+        background: white;
+    }
+
 }
 //AboutUs1 styling
 .image{
@@ -59,8 +72,7 @@ body{
     height:0.4rem;
     margin:2rem 0rem;
     width:100%;
-  }    
-
+  }
 `;
 //AboutUs3
 

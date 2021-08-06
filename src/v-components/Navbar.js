@@ -29,6 +29,10 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  .logo {
+    font-size: 40px;
+    font-family: "Abril Fatface", cursive;
+  }
   ul {
     list-style: none;
     display: flex;
