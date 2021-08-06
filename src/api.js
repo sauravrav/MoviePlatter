@@ -22,8 +22,8 @@ const thisYear = `${currentYear}-${getCurrentMonth()}-${getCurrentMonth()}`;
 const nextYear = `${currentYear + 1}-${getCurrentMonth()}-${getCurrentMonth()}`;
 const lastYear = `${currentYear - 1}-${getCurrentMonth()}-${getCurrentMonth()}`;
 //respective urls
-export const newMovieUrl = `${base_url}&primary_release_date.gte=${lastYear}&primary_release_date.lte=${thisYear}`;
-export const upcomingMovieUrl = `${base_url}&primary_release_date.gte=${thisYear}&primary_release_date.lte=${nextYear}`;
+export const upcomingMovieUrl = `${base_url}&primary_release_date.gte=${lastYear}&primary_release_date.lte=${thisYear}`;
+export const newMovieUrl = `${base_url}&primary_release_date.gte=${thisYear}&primary_release_date.lte=${nextYear}`;
 export const popularMovieUrl = `${base_url}&sort_by=popularity.desc`;
 export const movieDetailUrl = (movie_id) =>
   `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${process.env.REACT_APP_MOVIE_API}`;
