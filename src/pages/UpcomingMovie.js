@@ -47,5 +47,8 @@ const MovieList = styled(motion.div)`
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+  @media screen and (max-width: 600px) {
+    padding: 0rem 0rem;
+  }
 `;
 export default Upcoming;
